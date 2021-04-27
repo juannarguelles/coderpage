@@ -37,7 +37,7 @@ localStorage.setItem("Productos", JSON.stringify(Productos))
         contenedor.appendChild(img); 
         
         let div1 = document.createElement("div");
-        div1.setAttribute("class","card-body text-center");
+        div1.setAttribute("class","card-body");
         contenedor.appendChild(div1);
         
         let h2 = document.createElement("h5");
@@ -46,7 +46,7 @@ localStorage.setItem("Productos", JSON.stringify(Productos))
         div1.appendChild(h2);
         
         let p1 = document.createElement("p");
-        p1.setAttribute("class","text-center");
+        p1.setAttribute("class","");
         p1.textContent = `${element.detalle}`;
         div1.appendChild(p1);
         
@@ -57,7 +57,7 @@ localStorage.setItem("Productos", JSON.stringify(Productos))
         
         let button = document.createElement("button");
         button.setAttribute("class","agregar-carrito");
-        button.textContent = "Comprar";
+        button.textContent = "Agregar";
         div1.appendChild(button);
         
         //Selecciono el id "Productos"

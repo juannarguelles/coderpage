@@ -84,13 +84,13 @@ function agregarArticuloAlCarrito(titulo, precio, imagen) {
     }
     let contenidoCarrito = `
         <div class="cart-item cart-column">
-        <img class="cart-item-image" src="${imagen}" width="100" height="100">
+        <img class="cart-item-image" src="${imagen}">
         <span class="cart-item-title">${titulo}</span>
         </div>
         <span class="cart-price cart-column">${precio}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-        <button class="btn btn-danger" type="button">ELIMINAR</button>
+        <button class="btn btn-danger" type="button">X</button>
         </div>`
     carritoFila.innerHTML = contenidoCarrito
     articuloCarrito.append(carritoFila)

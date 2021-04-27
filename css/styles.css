@@ -25,6 +25,13 @@ h2 {
   background:rgb(75, 73, 73);
 }
 
+.imagen-producto{
+  border-radius: 4px 4px 0 0;
+  height: auto;
+  max-height: unset;
+  width: auto;
+}
+
 .container {
   width: 90%;
   margin: 50px auto;
@@ -59,7 +66,7 @@ h2 {
 }
 
 .cart-item {
-  width: 45%;
+  width: auto;
   font-size: 1.2em;
   color: #333;
 }
@@ -68,16 +75,19 @@ h2 {
   width: 10%;
   font-size: 1.2em;
   color: #333;
+  justify-content: center;
 }
 
 .cart-quantity {
-  width: 10%;
+  width: 100%;
   font-size: 1.2em;
   color: #333;
+  justify-content: flex-end;
 }
 
 .cart-column {
   display: flex;
+  width: 100%;
   align-items: center;
   border-bottom: 1px solid black;
   margin-right: 1.5em;
@@ -87,7 +97,7 @@ h2 {
 
 .cart-total-title {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   margin-right: 20px;
 }
@@ -95,13 +105,21 @@ h2 {
 
 .cart-total-price {
   color: #333;
-  font-size: 1.1em;
+  font-size: 2em;
 }
 
 .cart-total {
   text-align: end;
   margin-top: 10px;
   margin-right: 10px;
+
+}
+
+.btn-primary{
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  width: 33%;;
+  font-size: 16px;;
 }
 
 .row {
@@ -119,6 +137,16 @@ h2 {
   transition: 0.3s;
 }
 
+.card-body{
+  border-top: 1px solid #f5f5f5;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: -webkit-calc(100% - 284px);
+  height: calc(100% - 284px);
+  padding: 20px;
+  position: relative;
+}
+
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
@@ -131,9 +159,18 @@ button {
   padding: 10px 20px;
   border: none;
   outline: none;
-  border-radius: 4px;
-  background:rgb(75, 73, 73);
+  background:#00a650; 
   color: #fff;
+}
+
+.agregar-carrito{
+  border-radius: 4px;
+  margin: 0.5rem;
+
+}
+.precio-producto{
+  font-size: 1.3rem;
+  padding: 0.8rem;
 }
 
 .btn-comprar {
@@ -199,6 +236,11 @@ nav .logo {
   cursor: pointer;
 }
 
+.cart-item-image {
+  padding-right: 10%;
+  width: 25%;
+  height: 92%;
+}
 
 /* Responsive Design */
 
@@ -225,8 +267,9 @@ nav .logo {
   nav .mainMenu .closeMenu {
       display: block;
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 40px;
+      font-size: 2.5rem;
 
   }
   nav .openMenu {
@@ -246,13 +289,18 @@ nav .logo {
     width: 100%;
   }
   
-  img {
-    width: 100%;
- }
+  .cart-item-image {
+    width: 47%;
+    height: 71%;
+  }
 
- div .card-body{
-   font-size:medium;
- } 
+  .cart-item-title{
+    font-size: 1rem;
+    text-align: end;
+  }
+  div .card-body{
+    font-size:medium;
+  } 
 
   body {
     width: 100%;
