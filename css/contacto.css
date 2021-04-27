@@ -106,3 +106,12 @@
 	font-size: 13px;
 	font-weight: 600;
 }
+
+/* Responsive Design */
+
+@media(max-width: 800px){
+	.bg {
+	  width: 100%;
+	  padding: 30px;
+	  margin: 0;
+	}
