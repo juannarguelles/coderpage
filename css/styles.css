@@ -22,7 +22,7 @@ h1 {
 h2 {
   text-align: center;
   color: white;
-  background:rgb(75, 73, 73);
+  background: #0d6efd;
 }
 
 .imagen-producto{
@@ -68,20 +68,20 @@ h2 {
 .cart-item {
   width: auto;
   font-size: 1.2em;
-  color: #333;
+  color: black;
 }
 
 .cart-price {
   width: 10%;
   font-size: 1.2em;
-  color: #333;
+  color: black;
   justify-content: center;
 }
 
 .cart-quantity {
   width: 100%;
   font-size: 1.2em;
-  color: #333;
+  color:black;
   justify-content: flex-end;
 }
 
@@ -104,8 +104,8 @@ h2 {
 
 
 .cart-total-price {
-  color: #333;
-  font-size: 2em;
+  color: black;
+  font-size: 2.5em;
 }
 
 .cart-total {
@@ -166,8 +166,12 @@ button {
 .agregar-carrito{
   border-radius: 4px;
   margin: 0.5rem;
-
 }
+
+.agregar-carrito:hover{
+  background: #3483fa;
+}
+
 .precio-producto{
   font-size: 1.3rem;
   padding: 0.8rem;
@@ -191,8 +195,12 @@ button {
 
 /* MENU */
 
+body {
+  background: linear-gradient(#1c1852, #36136f, #792664, #a75858);
+}
+
 nav {
-  background: #000;
+  background: transparent;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -212,7 +220,7 @@ nav .mainMenu li a {
   font-size: 1.5rem;
 }
 nav .mainMenu li a:hover {
-  background: rgb(75, 73, 73);
+  color: white;
 }
 nav .openMenu {
   font-size: 2rem;
@@ -232,7 +240,6 @@ nav .mainMenu .closeMenu , .icons i {
 
 nav .logo {
   margin: 25px;
-  font-size: 25px;
   cursor: pointer;
 }
 

@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    	<!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/contacto.css">
+	
 	<title>Contacto</title>
   </head>
 
@@ -18,25 +19,25 @@
   <section class="bg">
   	<div class="container">
   		<div class="row d-flex justify-content-center">
-  			<div class="col-md-4">
+  			<div class="col-md-4 col-md-offset-4">
   				<div class="form-wrap">
   					<div class="form-heading">
   						<h1>Formulario de contacto</h1>
   					</div>
-  					<form name="regForm" id="regForm">
+  					<form class="form-contact" role="form">
   						<div class="form-group">
-  							<label>Nombre: </label>
-  							<input type="text" class="form-control" id="name"name="" placeholder="Nombre">
+  							<label for="nombre">Nombre: </label>
+  							<input type="text" required class="form-control" id="name" placeholder="Nombre">
   							<p id="p1"></p>
   						</div>
   						<div class="form-group">
-  							<label>Email: </label>
-  							<input type="email" class="form-control" id="email"name="" placeholder="Email">
+  							<label for="email">Email: </label>
+  							<input type="email" required class="form-control" id="email" placeholder="Email">
   							<p id="p2"></p>
   						</div>
   						<div class="form-group">
-  							<label>Contacto: </label>
-  							<textarea name="" id="message" cols="22" rows="10" placeholder="Ingrese su mensaje"></textarea>
+  							<label for="contacto">Contacto: </label>
+  							<textarea mensaje ="required" class="form-control" cols="30" rows="10" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
   							<p id="p3"></p>
   						</div>
   						<div class="form-group">
@@ -53,5 +54,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <script src="js/contacto.js"></script>
-  </body>
+
+	<!-- AJAX -->
+	<script src="js/ajax.js"></script>
+	</body>
 </html>

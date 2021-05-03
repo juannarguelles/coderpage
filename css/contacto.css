@@ -17,7 +17,7 @@
 	background-color: white;
 }
 
-#regForm{
+.form-contact{
 	padding: 50px 30px 30px 30px;
 }
 
@@ -115,3 +115,7 @@
 	  padding: 30px;
 	  margin: 0;
 	}
+	.message{
+		width: 210px;
+	}
+}

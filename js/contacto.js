@@ -4,8 +4,8 @@ $(document).ready(function(){
   $("#submit").click(function(){
     let nombre = $("#name").val();
     let email = $("#email").val();
-    let mensaje = $("#message").val();
-
+    let mensaje = $("#mensaje").val();
+    
     if(nombre.length == "")
     {
       $("#p1").text("Por favor ingrese su nombre");
@@ -21,12 +21,13 @@ $(document).ready(function(){
 
     else if(mensaje.length == ""){
       $("#p3").text("Por favor ingrese su mensaje");
-      $("#message").focus();
+      $("#mensaje").focus();
       return false;
     }
 
     else{
-      let acceso = confirm("Su mensaje se envío correctamente");
+      return true
+      /* let acceso = confirm("Su mensaje se envío correctamente");
       if( acceso == true)
       {
         window.location.href = '/index.html';
@@ -34,9 +35,8 @@ $(document).ready(function(){
       }
       else{
         return false;
-      }
+      } */
     }
   });
-  
 });
 
