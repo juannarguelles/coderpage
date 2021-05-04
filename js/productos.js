@@ -10,15 +10,15 @@ class Producto {
 
 const Productos = [];
 
-Productos.push(new Producto("Colchoneta 100x50x3cm", "Relleno goma", 999, true, "/image/colchoneta.png"));
-Productos.push(new Producto("TRX", "Material de función", 1500, true, "/image/trx.png"));
-Productos.push(new Producto("Esfera 65cm", "Material de función", 2200, false, "/image/esfera65.png"));
-Productos.push(new Producto("Esfera 75cm", "Material de función", 2500, false, "/image/esfera75.png"));
-Productos.push(new Producto("Zafu", "Relleno Orgánico de Cáscara De Trigo Sarraceno", 1500, false, "/image/zafu.png"));
-Productos.push(new Producto("Mancuerna 5kg", "Material de función", 3200, false, "/image/mancuerna.png"));
-Productos.push(new Producto("Pesas Rusas 6kg", "Material de función", 1920, false, "/image/rusa.png"));
-Productos.push(new Producto("Pesas Rusas 10kg", "Material de función", 3200, false, "/image/rusa.png"));
-Productos.push(new Producto("Pesas Rusas 14kg", "Material de función", 4480, false, "/image/rusa.png"));
+Productos.push(new Producto("Colchoneta 100x50x3cm", "Relleno espuma y Lona Bagum", 999, true, "image/colchoneta.png"));
+Productos.push(new Producto("TRX", "Material de nylon", 1500, true, "image/trx.png"));
+Productos.push(new Producto("Esfera 65cm", "Material latex", 2200, false, "image/esfera65.png"));
+Productos.push(new Producto("Esfera 75cm", "Material latex", 2500, false, "image/esfera75.png"));
+Productos.push(new Producto("Zafu", "Relleno Orgánico de Cáscara De Trigo Sarraceno", 1500, false, "image/zafu.png"));
+Productos.push(new Producto("Mancuerna 5kg", "Material de función", 3200, false, "image/mancuerna.png"));
+Productos.push(new Producto("Pesas Rusas 6kg", "Material de función", 1920, false, "image/rusa.png"));
+Productos.push(new Producto("Pesas Rusas 10kg", "Material de función", 3200, false, "image/rusa.png"));
+Productos.push(new Producto("Pesas Rusas 14kg", "Material de función", 4480, false, "image/rusa.png"));
 
 
 localStorage.setItem("Productos", JSON.stringify(Productos))
