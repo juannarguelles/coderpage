@@ -31,7 +31,7 @@ function comenzar(){
 //compra pulsada
 
 function compraClick(){
-    alert('Gracias por tu compra')
+    swal('Gracias por tu compra', {icon:"success"})
     let cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -74,25 +74,28 @@ function agregarBoton(e){
 function agregarArticuloAlCarrito(titulo, precio, imagen) {
     let carritoFila = document.createElement('div')
     carritoFila.classList.add('cart-row')
+
     let articuloCarrito = document.getElementsByClassName('cart-items')[0]
+    
     let nombreArticuloCarrito = articuloCarrito.getElementsByClassName('cart-item-title')
     for (let i = 0; i < nombreArticuloCarrito.length; i++){
         if (nombreArticuloCarrito[i].innerText == titulo) {
-            alert('El artículo ya fué agregado al carrito')
+            swal('El artículo ya fué agregado al carrito', {icon: 'error'})
             return
         }
     }
     let contenidoCarrito = `
         <div class="cart-item cart-column">
-        <img class="cart-item-image" src="${imagen}">
-        <span class="cart-item-title">${titulo}</span>
+            <img class="cart-item-image" src="${imagen}">
+            <span class="cart-item-title">${titulo}</span>
         </div>
         <span class="cart-price cart-column">${precio}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-        <button class="btn btn-danger" type="button">X</button>
+            <button class="btn btn-danger" type="button">X</button>
         </div>`
     carritoFila.innerHTML = contenidoCarrito
+
     articuloCarrito.append(carritoFila)
     carritoFila.getElementsByClassName('btn-danger')[0].addEventListener('click', eliminarArtCarrito)
     carritoFila.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', cantidadCambios)
